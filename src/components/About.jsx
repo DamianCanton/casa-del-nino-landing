@@ -70,6 +70,27 @@ const About = () => {
                         ))}
                     </motion.div>
                 </div>
+
+                {/* Video Section */}
+                <div className="mt-20">
+                    <div className="text-center mb-12">
+                        <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Un poco de nosotros</h3>
+                        <div className="w-16 h-1 bg-secondary mx-auto rounded-full"></div>
+                    </div>
+                    
+                    <div className="max-w-4xl mx-auto rounded-xl overflow-hidden shadow-lg">
+                        <div className="relative pb-[56.25%] h-0">
+                            <iframe 
+                                className="absolute top-0 left-0 w-full h-full"
+                                src="https://www.youtube.com/embed/WoMkR-7nZAc" 
+                                title="Un poco de nosotros - Casa del Niño"
+                                frameBorder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowFullScreen
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     );

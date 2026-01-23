@@ -1,5 +1,5 @@
 import React from 'react';
-import { Facebook, Instagram, Twitter } from 'lucide-react';
+import { Facebook, Instagram } from 'lucide-react';
 
 const Footer = () => {
     return (
@@ -12,7 +12,7 @@ const Footer = () => {
                             <img
                                 src="/assets/logo.jpg"
                                 alt="Casa del Niño Logo"
-                                className="h-10 w-auto object-contain brightness-0 invert"
+                                className="h-12 w-auto object-contain rounded-md"
                             />
                             <span className="font-bold text-lg">CASA DEL NIÑO</span>
                         </div>
@@ -45,14 +45,21 @@ const Footer = () => {
                     <div>
                         <h4 className="font-bold text-lg mb-4">Seguinos</h4>
                         <div className="flex space-x-4">
-                            <a href="#" className="bg-gray-800 p-2 rounded-full hover:bg-primary transition-colors">
+                            <a 
+                                href="https://www.facebook.com/share/1aPC6Cp3F9/?mibextid=wwXIfr" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                className="bg-gray-800 p-2 rounded-full hover:bg-primary transition-colors"
+                            >
                                 <Facebook className="w-5 h-5" />
                             </a>
-                            <a href="#" className="bg-gray-800 p-2 rounded-full hover:bg-primary transition-colors">
+                            <a 
+                                href="https://www.instagram.com/lacasadelninio?igsh=czE0MWNhYzV3YTEz" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                className="bg-gray-800 p-2 rounded-full hover:bg-primary transition-colors"
+                            >
                                 <Instagram className="w-5 h-5" />
-                            </a>
-                            <a href="#" className="bg-gray-800 p-2 rounded-full hover:bg-primary transition-colors">
-                                <Twitter className="w-5 h-5" />
                             </a>
                         </div>
                     </div>

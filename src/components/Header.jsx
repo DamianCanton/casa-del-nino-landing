@@ -9,7 +9,6 @@ const Header = () => {
         { name: 'Inicio', href: '#home' },
         { name: 'Quiénes Somos', href: '#about' },
         { name: 'Qué Hacemos', href: '#programs' },
-        { name: 'Cómo Ayudar', href: '#help' },
         { name: 'Noticias', href: '#news' },
         { name: 'Contacto', href: '#contact' },
     ];

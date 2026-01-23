@@ -1,15 +1,20 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import heroBg from '../assets/hero-new.jpg';
 
 const Hero = () => {
     return (
-        <section id="home" className="relative bg-primary min-h-[600px] flex items-center justify-center overflow-hidden">
-            {/* Background Gradient/Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-br from-primary to-blue-900 opacity-90 z-0"></div>
-
-            {/* Decorative Circles */}
-            <div className="absolute top-0 left-0 w-64 h-64 bg-white opacity-5 rounded-full -translate-x-1/2 -translate-y-1/2 blur-3xl"></div>
-            <div className="absolute bottom-0 right-0 w-96 h-96 bg-secondary opacity-10 rounded-full translate-x-1/3 translate-y-1/3 blur-3xl"></div>
+        <section id="home" className="relative min-h-[600px] flex items-center justify-center overflow-hidden">
+            {/* Background Image */}
+            <div className="absolute inset-0 z-0">
+                <img 
+                    src={heroBg} 
+                    alt="Casa del Niño Background" 
+                    className="w-full h-full object-cover"
+                />
+                {/* Overlay for readability */}
+                <div className="absolute inset-0 bg-black/50"></div>
+            </div>
 
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
                 <motion.div
@@ -27,14 +32,6 @@ const Hero = () => {
                         los 365 días del año en Unquillo, Córdoba.
                     </p>
 
-                    <motion.a
-                        href="#help"
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                        className="inline-block bg-secondary hover:bg-orange-600 text-white text-lg font-bold px-8 py-4 rounded-full shadow-lg transition-all duration-300"
-                    >
-                        Cómo Ayudar
-                    </motion.a>
                 </motion.div>
             </div>
         </section>
