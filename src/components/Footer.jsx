@@ -67,6 +67,9 @@ const Footer = () => {
 
                 <div className="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
                     <p>&copy; {new Date().getFullYear()} Casa del Niño. Todos los derechos reservados.</p>
+                    <p className="mt-2">
+                        Casa del Niño es una organización sin fines de lucro dedicada a brindar hogar, educación y oportunidades a niños y niñas en situación de vulnerabilidad. Agradecemos tu apoyo y compromiso: si querés colaborar, ser voluntario o realizar una donación, visitá nuestra sección de contacto para más información.
+                    </p>
                 </div>
             </div>
         </footer>
